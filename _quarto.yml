@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Geospatial Masterclass"
+  navbar:
+    left:
+      - href: website/index.qmd
+        text: Home
+      - href: website/courses.qmd
+        text: Catalog
+      - href: website/schedule.qmd
+        text: Schedule
+      - href: website/References.qmd
+        text: References 
+format:
+  html:
+    theme:
+      - cosmo      
+    css: website/styles.css
+    toc: true

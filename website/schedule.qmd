@@ -1,0 +1,18 @@
+---
+title: "Schedule"
+---
+
+Schedule is tentative and subject to change 
+
+| Date | Course | Trainer |
+| --- | --- | --- |
+| 2026-02-18 | Introduction to geospatial at the World Bank | Lots of people |
+| 2026-03-04 | Market access and GOSTnets | Ben and Dunstan | 
+| 2026-03-18 | Introduction to Remote Sensing | Katie, Clara, Ben |
+| 2026-04-01 | Space2Stats | Ben and Gabe |
+| 2025-04-15 | Black Marble Py | Sahiti and Rob |
+| 2025-04-29 | World Bank cartography | Katie and Bruno |
+| 2025-05-13 | Popular geospatial public goods | Clara, Dunstan |
+| 2025-05-27 | Space2Stats: People and Planet | Brian |
+| 2025-06-10 | Radar damage assessments | Clara |
+| 2026-06-24 | Data collection with GEMS | Bernhard |

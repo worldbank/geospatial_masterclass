@@ -1,0 +1,30 @@
+---
+title: "Course Catalog"
+---
+# Foundational Courses
+The foundational courses are exactly that, they are the baseline upon which several of the other courses build upon. Some of these will become suggested pre-requisites for the Specialized Offerings.
+
+| Title | Description | Teachers |
+| --- | --- | --- |
+| Data Science at the World Bank | Foundations of geospatial data science | TBD |
+| Course | Description | Presenter
+| Introduction to desktop GIS | Data types, projections, thematic maps | Katie
+| Intro to satellite imagery | KTF intro, section on WB procurement, ESA/NASA partnerships, data exploration in Python | Katie, Ben, Clara
+| Popular open geospatial datasets | WorldPop, ACLED, Fathom, Overture – access, licensing, distribution, etc. | Dunstan Matekenya and Clara Ivanescu |
+| World Bank cartography | Admin boundaries, drawing rules, options for python, R, and flourish | Katie, Bruno, Brian, Ben |
+
+# Advanced Courses
+These trainings provide detailed, technical introductions to niche tools. While many of these tools have applications across the WB portfolio, we anticipate the audience to be more technical, smaller, and more dedicated.
+
+| Title | Description | Teachers |
+| --- | --- | --- |
+| Nighttime lights (Blackmarblepy) | How to access and map nighttime lights data through NASA’s Black Marble product | Rob Marty and Sahiti Sarva |
+| [Market Access and GOSTnets](https://github.com/worldbank/Health-Access-Metrics/tree/main/notebooks/Tutorials) | Travel time and market access are common geospatial data requests, and GOST has existing python tools to do so | Benjamin Stewart and Dunstan Matekenya |
+| [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html) | The World Bank’s database of sub-national geospatial aggregates. Users will explore access the data through the Python library, DDH, and the hexagon FastAPI. | Benjamin Stewart and Gabe Levin |
+| People and Planet indicators | The World Bank’s database of sub-national geospatial indicators including people and planet (e.g. biodiversity, air emissions indicators, and air quality (forthcoming)) | Brian Blankespoor |
+| [GeoE3 (Enabling Environments for Employment)](https://worldbank.github.io/GEEST/README.html) | powerful and user-friendly open-source spatial mapping tool that enables a comprehensive analysis of how various spatial factors influence women's employment and business opportunities in any geographic area of interest | Clara |
+| [Radar damage assessments](https://github.com/worldbank/GOST_SAR) | Collection of tools developed by GOST team for extracting information from SAR data | Clara |
+| Geospatial data collection | Survey solutions, Mapillary, OpenStreetMap, KoboToolbox | Bernhard Metz |
+| Spatial anonymization and geo-variables |  | Dunstan |
+
+
