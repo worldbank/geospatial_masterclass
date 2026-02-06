@@ -1,0 +1,29 @@
+# Data Science at the World Bank
+Data Science is emerging as a critical capability across the World Bank Group, enabling more informed decision-making and impactful development outcomes. This course provides an overview of foundational concepts in geospatial data science, tailored to the needs of World Bank professionals, as well as various tips and tricks for performing geospatial data science within the World Bank environment.
+
+## Objectives
+By the end of this module, you will be able to:
+- Understand the fundamentals of geospatial data science.
+- Identify key geospatial data sources and tools relevant to the World Bank.
+- Perform basic data science tasks using official World Bank platforms and resources.
+
+## Prerequisites
+Before starting this module, ensure you:
+- work at the World Bank and have access to its data platforms.
+- have a basic understanding of data analysis concepts.
+
+| Course | Details |
+|-----|-----|
+| Instructors | Geospatial Masterclass Team |
+| Duration | 2 hours |
+| Level | Beginner |
+| Software | Python or R |
+
+## Course outline
+| Module | Description | Trainer |
+|--------|-------------|---------|
+| Data Science at the World Bank  | Overview of data science and its importance in development projects | TBD |
+| The World Bank's Data Catalog | Navigating and utilizing the World Bank's Data Catalog for geospatial data | Gaurav Bhardwaj |
+| Github at the World Bank | Using Github for version control and collaboration on geospatial data science projects | Bryan Cahill |
+| The Development Data Partnership (DDP) | Introduction to the DDP platform for accessing data | Sahiti Sarva |
+| Geospatial Data Science | Overview of geospatial data science concepts and their relevance to the World Bank | Benjamin Stewart |

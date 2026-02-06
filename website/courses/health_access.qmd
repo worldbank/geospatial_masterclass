@@ -1,0 +1,22 @@
+# Market Access
+Measuring travel time and market access are crucial for understanding how easily individuals can reach essential services, such as healthcare facilities, schools, and markets. This module will guide you through the process of calculating travel time and market access using geospatial data and tools.
+## Objectives
+By the end of this module, you will be able to:
+- Understand the concepts of travel time and market access.
+- Use geospatial data to calculate travel time to various services.
+- Analyze market access based on travel time data.
+## Prerequisites
+Before starting this module, ensure you have:
+- Basic knowledge of Python.
+- Knowledge of github (code access and version control), Jupyter Notebooks (code execution), and Anaconda (environment management).
+
+| Course | Details |
+|-----|-----|
+| Instructors | Benjamin Stewart, Dunstan Matekenya, and Katie McWilliams |
+| Duration | 3 hours |
+| Level | Intermediate |
+| Software | Python, Jupyter Notebooks |
+| Course Materials | [Health Access](https://github.com/worldbank/Health-Access-Metrics/tree/main/notebooks/Tutorials) |
+
+## Additional Materials
+Lorem Ipsum

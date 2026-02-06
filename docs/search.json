@@ -4,21 +4,63 @@
     "href": "website/schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Schedule is tentative and subject to change\n\n\n\n\n\n\n\n\nDate\nCourse\nTrainer\n\n\n\n\n2026-02-18\nIntroduction to geospatial at the World Bank\nLots of people\n\n\n2026-03-04\nMarket access and GOSTnets\nBen and Dunstan\n\n\n2026-03-18\nIntroduction to Remote Sensing\nKatie, Clara, Ben\n\n\n2026-04-01\nSpace2Stats\nBen and Gabe\n\n\n2025-04-15\nBlack Marble Py\nSahiti and Rob\n\n\n2025-04-29\nWorld Bank cartography\nKatie and Bruno\n\n\n2025-05-13\nPopular geospatial public goods\nClara, Dunstan\n\n\n2025-05-27\nSpace2Stats: People and Planet\nBrian\n\n\n2025-06-10\nRadar damage assessments\nClara\n\n\n2026-06-24\nData collection with GEMS\nBernhard"
+    "text": "Schedule is tentative and subject to change\n\n\n\nDate\nCourse\n\n\n\n\n2026-02-18\nIntroduction to geospatial data science at the World Bank\n\n\n2026-03-04\nConnectivity analytics with GOSTnets: building and using transport networks to assess access and travel time\n\n\n2026-03-18\nFrom pixels to products: Introduction to remote sensing and earth observation from a development perspective\n\n\n2026-04-01\nSpace2Stats: exploring the World Bank’s subnational geospatial aggregates using Python, DDH, and Hex API\n\n\n2026-04-15\nBlackmarpley: How to leverage NASA’s Black Marble nightlights products to inform development decisions\n\n\n2026-04-29\nPrinciples of World Bank cartography: from data to decision-ready maps\n\n\n2026-05-13\nPopular geospatial public goods\n\n\n2026-05-27\nSpace2Stats: People and Planet\n\n\n2026-06-10\nRadar damage assessments\n\n\n2026-06-24\nData collection with GEMS"
   },
   {
     "objectID": "website/index.html",
     "href": "website/index.html",
-    "title": "Geospatial Masterclass",
+    "title": "Beyond the Map",
     "section": "",
     "text": "Geospatial Data Science Training\nGeospatial data are increasingly common in World Bank analytics and operations, and with the professionalization of data science at the World Bank, we need to take geospatial data science more seriously. These courses are designed as an introduction to geospatial data, specific aspects of geospatial at the World Bank, and a portfolio of geospatial data science across the institution.\n\n\nOrganization\nThis geospatial masterclass is a collaboration across several World Bank departments. Spearheaded by the Geospatial Operations Support Team in support of the Data Academy, the course is supported by the Data Partnership, ITS GeoLab, DIME, and Innovation.\nSee the tabs above to explore the schedule, course catalog, and course resources. For any questions, comments, or ideas, feel free to raise an issue in the github repository."
+  },
+  {
+    "objectID": "website/courses/health_access.html",
+    "href": "website/courses/health_access.html",
+    "title": "Market Access",
+    "section": "",
+    "text": "Measuring travel time and market access are crucial for understanding how easily individuals can reach essential services, such as healthcare facilities, schools, and markets. This module will guide you through the process of calculating travel time and market access using geospatial data and tools. ## Objectives By the end of this module, you will be able to: - Understand the concepts of travel time and market access. - Use geospatial data to calculate travel time to various services. - Analyze market access based on travel time data. ## Prerequisites Before starting this module, ensure you have: - Basic knowledge of Python. - Knowledge of github (code access and version control), Jupyter Notebooks (code execution), and Anaconda (environment management).\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nBenjamin Stewart, Dunstan Matekenya, and Katie McWilliams\n\n\nDuration\n3 hours\n\n\nLevel\nIntermediate\n\n\nSoftware\nPython, Jupyter Notebooks\n\n\nCourse Materials\nHealth Access\n\n\n\n\n\nLorem Ipsum"
+  },
+  {
+    "objectID": "website/courses/health_access.html#additional-materials",
+    "href": "website/courses/health_access.html#additional-materials",
+    "title": "Market Access",
+    "section": "",
+    "text": "Lorem Ipsum"
+  },
+  {
+    "objectID": "website/courses/data_science.html",
+    "href": "website/courses/data_science.html",
+    "title": "Data Science at the World Bank",
+    "section": "",
+    "text": "Data Science is emerging as a critical capability across the World Bank Group, enabling more informed decision-making and impactful development outcomes. This course provides an overview of foundational concepts in geospatial data science, tailored to the needs of World Bank professionals, as well as various tips and tricks for performing geospatial data science within the World Bank environment.\n\n\nBy the end of this module, you will be able to: - Understand the fundamentals of geospatial data science. - Identify key geospatial data sources and tools relevant to the World Bank. - Perform basic data science tasks using official World Bank platforms and resources.\n\n\n\nBefore starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of data analysis concepts.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nTBD\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart"
+  },
+  {
+    "objectID": "website/courses/data_science.html#objectives",
+    "href": "website/courses/data_science.html#objectives",
+    "title": "Data Science at the World Bank",
+    "section": "",
+    "text": "By the end of this module, you will be able to: - Understand the fundamentals of geospatial data science. - Identify key geospatial data sources and tools relevant to the World Bank. - Perform basic data science tasks using official World Bank platforms and resources."
+  },
+  {
+    "objectID": "website/courses/data_science.html#prerequisites",
+    "href": "website/courses/data_science.html#prerequisites",
+    "title": "Data Science at the World Bank",
+    "section": "",
+    "text": "Before starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of data analysis concepts.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R"
+  },
+  {
+    "objectID": "website/courses/data_science.html#course-outline",
+    "href": "website/courses/data_science.html#course-outline",
+    "title": "Data Science at the World Bank",
+    "section": "",
+    "text": "Module\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nTBD\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart"
   },
   {
     "objectID": "website/courses.html",
     "href": "website/courses.html",
     "title": "Course Catalog",
     "section": "",
-    "text": "Foundational Courses\nThe foundational courses are exactly that, they are the baseline upon which several of the other courses build upon. Some of these will become suggested pre-requisites for the Specialized Offerings.\n\n\n\n\n\n\n\n\nTitle\nDescription\nTeachers\n\n\n\n\nData Science at the World Bank\nFoundations of geospatial data science\nTBD\n\n\nCourse\nDescription\nPresenter\n\n\nIntroduction to desktop GIS\nData types, projections, thematic maps\nKatie\n\n\nIntro to satellite imagery\nKTF intro, section on WB procurement, ESA/NASA partnerships, data exploration in Python\nKatie, Ben, Clara\n\n\nPopular open geospatial datasets\nWorldPop, ACLED, Fathom, Overture – access, licensing, distribution, etc.\nDunstan Matekenya and Clara Ivanescu\n\n\nWorld Bank cartography\nAdmin boundaries, drawing rules, options for python, R, and flourish\nKatie, Bruno, Brian, Ben\n\n\n\n\n\nAdvanced Courses\nThese trainings provide detailed, technical introductions to niche tools. While many of these tools have applications across the WB portfolio, we anticipate the audience to be more technical, smaller, and more dedicated.\n\n\n\nTitle\nDescription\nTeachers\n\n\n\n\nNighttime lights (Blackmarblepy)\nHow to access and map nighttime lights data through NASA’s Black Marble product\nRob Marty and Sahiti Sarva\n\n\nMarket Access and GOSTnets\nTravel time and market access are common geospatial data requests, and GOST has existing python tools to do so\nBenjamin Stewart and Dunstan Matekenya\n\n\nSpace2Stats\nThe World Bank’s database of sub-national geospatial aggregates. Users will explore access the data through the Python library, DDH, and the hexagon FastAPI.\nBenjamin Stewart and Gabe Levin\n\n\nPeople and Planet indicators\nThe World Bank’s database of sub-national geospatial indicators including people and planet (e.g. biodiversity, air emissions indicators, and air quality (forthcoming))\nBrian Blankespoor\n\n\nGeoE3 (Enabling Environments for Employment)\npowerful and user-friendly open-source spatial mapping tool that enables a comprehensive analysis of how various spatial factors influence women’s employment and business opportunities in any geographic area of interest\nClara\n\n\nRadar damage assessments\nCollection of tools developed by GOST team for extracting information from SAR data\nClara\n\n\nGeospatial data collection\nSurvey solutions, Mapillary, OpenStreetMap, KoboToolbox\nBernhard Metz\n\n\nSpatial anonymization and geo-variables\n\nDunstan"
+    "text": "Foundational Courses\nThe foundational courses are exactly that, they are the baseline upon which several of the other courses build upon. Some of these will become suggested pre-requisites for the Specialized Offerings.\n\n\n\nTitle\nDescription\nTeachers\n\n\n\n\nData Science at the World Bank\nFoundations of geospatial data science\nTBD\n\n\nIntroduction to desktop GIS\nData types, projections, thematic maps\nKatie\n\n\nIntro to satellite imagery\nKTF intro, section on WB procurement, ESA/NASA partnerships, data exploration in Python\nKatie, Ben, Clara\n\n\nPopular open geospatial datasets\nWorldPop, ACLED, Fathom, Overture – access, licensing, distribution, etc.\nDunstan Matekenya and Clara Ivanescu\n\n\nWorld Bank cartography\nAdmin boundaries, drawing rules, options for python, R, and flourish\nKatie, Bruno, Brian, Ben\n\n\n\n\n\nAdvanced Courses\nThese trainings provide detailed, technical introductions to niche tools. While many of these tools have applications across the WB portfolio, we anticipate the audience to be more technical, smaller, and more dedicated.\n\n\n\nTitle\nDescription\nTeachers\n\n\n\n\nNighttime lights (Blackmarblepy)\nHow to access and map nighttime lights data through NASA’s Black Marble product\nRob Marty and Sahiti Sarva\n\n\nMarket Access and GOSTnets\nTravel time and market access are common geospatial data requests, and GOST has existing python tools to do so\nBenjamin Stewart and Dunstan Matekenya\n\n\nSpace2Stats\nThe World Bank’s database of sub-national geospatial aggregates. Users will explore access the data through the Python library, DDH, and the hexagon FastAPI.\nBenjamin Stewart and Gabe Levin\n\n\nPeople and Planet indicators\nThe World Bank’s database of sub-national geospatial indicators including people and planet (e.g. biodiversity, air emissions indicators, and air quality (forthcoming))\nBrian Blankespoor\n\n\nGeoE3 (Enabling Environments for Employment)\npowerful and user-friendly open-source spatial mapping tool that enables a comprehensive analysis of how various spatial factors influence women’s employment and business opportunities in any geographic area of interest\nClara\n\n\nRadar damage assessments\nCollection of tools developed by GOST team for extracting information from SAR data\nClara\n\n\nGeospatial data collection\nSurvey solutions, Mapillary, OpenStreetMap, KoboToolbox\nBernhard Metz\n\n\nSpatial anonymization and geo-variables\n\nDunstan"
   },
   {
     "objectID": "website/references.html",

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Geospatial Masterclass"
+  title: "Beyond the Map"
   navbar:
     left:
       - href: website/index.qmd
@@ -12,7 +12,7 @@ website:
         text: Catalog
       - href: website/schedule.qmd
         text: Schedule
-      - href: website/References.qmd
+      - href: website/references.qmd
         text: References 
 format:
   html:

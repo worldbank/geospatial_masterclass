@@ -4,15 +4,15 @@ title: "Schedule"
 
 Schedule is tentative and subject to change 
 
-| Date | Course | Trainer |
-| --- | --- | --- |
-| 2026-02-18 | Introduction to geospatial at the World Bank | Lots of people |
-| 2026-03-04 | Market access and GOSTnets | Ben and Dunstan | 
-| 2026-03-18 | Introduction to Remote Sensing | Katie, Clara, Ben |
-| 2026-04-01 | Space2Stats | Ben and Gabe |
-| 2025-04-15 | Black Marble Py | Sahiti and Rob |
-| 2025-04-29 | World Bank cartography | Katie and Bruno |
-| 2025-05-13 | Popular geospatial public goods | Clara, Dunstan |
-| 2025-05-27 | Space2Stats: People and Planet | Brian |
-| 2025-06-10 | Radar damage assessments | Clara |
-| 2026-06-24 | Data collection with GEMS | Bernhard |
+| Date | Course | 
+| --- | --- | 
+| 2026-02-18 | [Introduction to geospatial data science at the World Bank](courses/data_science.qmd) | 
+| 2026-03-04 | [Connectivity analytics with GOSTnets: building and using transport networks to assess access and travel time](courses/health_access.qmd) | 
+| 2026-03-18 | From pixels to products: Introduction to remote sensing and earth observation from a development perspective | 
+| 2026-04-01 | Space2Stats: exploring the World Bank’s subnational geospatial aggregates using Python, DDH, and Hex API | 
+| 2026-04-15 | Blackmarpley: How to leverage NASA’s Black Marble nightlights products to inform development decisions | 
+| 2026-04-29 | Principles of World Bank cartography: from data to decision-ready maps | 
+| 2026-05-13 | Popular geospatial public goods |  
+| 2026-05-27 | Space2Stats: People and Planet | 
+| 2026-06-10 | Radar damage assessments | 
+| 2026-06-24 | Data collection with GEMS | 
