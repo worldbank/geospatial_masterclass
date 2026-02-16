@@ -1,2 +1,9 @@
 # Beyond the Map: Geospatial Data Science at the World Bank
-[Geospatial data science training documentation and plan](https://supreme-adventure-wrp1j2m.pages.github.io/)
+[Geospatial data science training documentation and plan](https://worldbank.github.io/geospatial_masterclass/docs/website/index.html)
+
+Geospatial data are increasingly common in World Bank analytics and operations, and with the professionalization of data science at the World Bank, we need to take geospatial data science more seriously. These courses are designed as an introduction to geospatial data, specific aspects of geospatial at the World Bank, and a portfolio of geospatial data science across the institution.
+
+# Organization
+This geospatial masterclass is a collaboration across several World Bank departments. Spearheaded by the [Geospatial Operations Support Team](https://worldbank.github.io/GOST/README.html) in support of the [Data Academy](https://www.wbginstitute.org/), the course is supported by the Data Partnership, ITS' GeoLab, and DIME.
+
+See the tabs above to explore the schedule, course catalog, and course resources. For any questions, comments, or ideas, feel free to raise an issue in the [github repository](https://github.com/worldbank/geospatial_masterclass/issues).

@@ -28,11 +28,25 @@
     "text": "Lorem Ipsum"
   },
   {
+    "objectID": "exercies/Intro_geospatial_data_science/exploring_projections.html",
+    "href": "exercies/Intro_geospatial_data_science/exploring_projections.html",
+    "title": "Exploring coordinate systems and projections in Python",
+    "section": "",
+    "text": "Understanding coordinate systems and projections when working with geospatial data is important to:\nNowadays, most of the mathematics and conversions are cleanly handled under-the-hood, but the decisions the Data Scientist makes are still important.\nThis notebook will explore projections and coordinate systems and investigate how changes in projections can affect results\nimport sys, os\nimport urllib.parse\nimport requests\nimport rasterio\n\nimport matplotlib.pyplot as plt\nimport pandas as pd \nimport geopandas as gpd\n\nfrom io import BytesIO\n# Choose and Map your favourite country\niso3 = \"GHA\"\n\n# Define some input variables for data exploration\n### Official World Bank Group boundary dataset - https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries\nworld_adm1_boundaries =\"https://datacatalogfiles.worldbank.org/ddh-published-v2/0038272/5/DR0095369/World%20Bank%20Official%20Boundaries%20(GeoJSON)/World%20Bank%20Official%20Boundaries%20-%20Admin%201.geojson\"\nadm1_bounds = gpd.read_file(world_adm1_boundaries)\n# We can also read these from the ESRI rest endpoint through the World Bank's GeoWB\nqueryable_geowb_url = urllib.parse.quote(f'https://services.arcgis.com/iQ1dY19aHwbSDYIF/arcgis/rest/services/World_Bank_Global_Administrative_Divisions/FeatureServer/2/query?where=\"ISO_A3\"=\\'{iso3}\\'&f=pgeojson', safe=':/?=&')\ncountry_bound = gpd.read_file(queryable_geowb_url)\n# SSL errors are common when working inside the World Bank firewall. If you encounter these, you can bypass them with the code below\nresponse = requests.get(queryable_geowb_url, verify=False) # &lt;--- Ignore SSL\ncountry_bound = gpd.read_file(BytesIO(response.content))\n# Plot the country data 3 ways\ncountry_bound.union_all()\ncountry_bound.plot()\ncountry_bound.explore().save(\"country_bound.html\")"
+  },
+  {
+    "objectID": "exercies/Intro_geospatial_data_science/exploring_projections.html#how-do-projections-affect-visuals",
+    "href": "exercies/Intro_geospatial_data_science/exploring_projections.html#how-do-projections-affect-visuals",
+    "title": "Exploring coordinate systems and projections in Python",
+    "section": "How do projections affect visuals",
+    "text": "How do projections affect visuals\nSearch for different projections for your country at epsg.io\n\nprojection_1 = 2136  # https://epsg.io/2136\nprojection_2 = 32630 # https://epsg.io/32630\nprojection_3 = \"ESRI:54009\" # https://spatialreference.org/ref/esri/54009/ - this is a world projection that preserves area, but distorts shape and distance. It is often used for global scale mapping.\n\n\nfig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15, 5))\n\ncountry_bound.to_crs(projection_1).plot(ax=axes[0])\ncountry_bound.to_crs(projection_2).plot(ax=axes[1])\ncountry_bound.to_crs(projection_3).plot(ax=axes[2])\n\n\n# Compare area calculations across projections\ncountry_bound[\"area_projection_1\"] = country_bound.to_crs(projection_1).area/1000000 # Convert from m^2 to km^2\ncountry_bound[\"area_projection_2\"] = country_bound.to_crs(projection_2).area/1000000 # Convert from m^2 to km^2\ncountry_bound[\"area_projection_3\"] = country_bound.to_crs(projection_3).area/1000000 # Convert from m^2 to km^2\n\ncountry_bound.sort_values(\"area_projection_1\", ascending=False)"
+  },
+  {
     "objectID": "website/courses/data_science.html",
     "href": "website/courses/data_science.html",
     "title": "Data Science at the World Bank",
     "section": "",
-    "text": "Data Science is emerging as a critical capability across the World Bank Group, enabling more informed decision-making and impactful development outcomes. This course provides an overview of foundational concepts in geospatial data science, tailored to the needs of World Bank professionals, as well as various tips and tricks for performing geospatial data science within the World Bank environment.\n\n\nBy the end of this module, you will be able to: - Understand the fundamentals of geospatial data science. - Identify key geospatial data sources and tools relevant to the World Bank. - Perform basic data science tasks using official World Bank platforms and resources.\n\n\n\nBefore starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of data analysis concepts.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nTBD\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart"
+    "text": "Data Science is emerging as a critical capability across the World Bank Group, enabling more informed decision-making and impactful development outcomes. This course provides an overview of foundational concepts in geospatial data science, tailored to the needs of World Bank professionals, as well as various tips and tricks for performing geospatial data science within the World Bank environment.\n\n\nBy the end of this module, you will be able to: - Understand the fundamentals of geospatial data science. - Identify key geospatial data sources and tools relevant to the World Bank. - Perform basic data science tasks using official World Bank platforms and resources.\n\n\n\nBefore starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of Python.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2-3 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nBenjamin Stewart\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nDatabricks at the World Bank\nIntroduction to Databricks for big data processing and analysis\nIvan Spirev\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart\n\n\n\n\n\n\nFor more information on the course, please contact Benjamin Stewart at the GOST team (gost@worldbank.org).\n\n\nWebsite: https://datacatalog.worldbank.org/int/home\nAPI Link: https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html\nContact Person: DDH team (ddh@worldbank.org)\n\n\n\nWB GitHub Organization: https://github.com/worldbank/\nMember Onboarding Form: http://githubmemberrequest/\nPublic Repository Request Form: http://githubreporequest/\nOpen Source Code Catalog: https://opensource.worldbank.org\nNeed Help: github@worldbank.org\n\n\n\nWebsite:\nContact Person: Ivan Spirev\n\n\n\nWebsite: https://datapartnership.org/\nContact Person: DDP team (datapartnership@worldbank.org)"
   },
   {
     "objectID": "website/courses/data_science.html#objectives",
@@ -46,14 +60,21 @@
     "href": "website/courses/data_science.html#prerequisites",
     "title": "Data Science at the World Bank",
     "section": "",
-    "text": "Before starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of data analysis concepts.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R"
+    "text": "Before starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of Python.\n\n\n\nCourse\nDetails\n\n\n\n\nInstructors\nGeospatial Masterclass Team\n\n\nDuration\n2-3 hours\n\n\nLevel\nBeginner\n\n\nSoftware\nPython or R"
   },
   {
     "objectID": "website/courses/data_science.html#course-outline",
     "href": "website/courses/data_science.html#course-outline",
     "title": "Data Science at the World Bank",
     "section": "",
-    "text": "Module\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nTBD\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart"
+    "text": "Module\nDescription\nTrainer\n\n\n\n\nData Science at the World Bank\nOverview of data science and its importance in development projects\nBenjamin Stewart\n\n\nThe World Bank’s Data Catalog\nNavigating and utilizing the World Bank’s Data Catalog for geospatial data\nGaurav Bhardwaj\n\n\nGithub at the World Bank\nUsing Github for version control and collaboration on geospatial data science projects\nBryan Cahill\n\n\nDatabricks at the World Bank\nIntroduction to Databricks for big data processing and analysis\nIvan Spirev\n\n\nThe Development Data Partnership (DDP)\nIntroduction to the DDP platform for accessing data\nSahiti Sarva\n\n\nGeospatial Data Science\nOverview of geospatial data science concepts and their relevance to the World Bank\nBenjamin Stewart"
+  },
+  {
+    "objectID": "website/courses/data_science.html#more-information",
+    "href": "website/courses/data_science.html#more-information",
+    "title": "Data Science at the World Bank",
+    "section": "",
+    "text": "For more information on the course, please contact Benjamin Stewart at the GOST team (gost@worldbank.org).\n\n\nWebsite: https://datacatalog.worldbank.org/int/home\nAPI Link: https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html\nContact Person: DDH team (ddh@worldbank.org)\n\n\n\nWB GitHub Organization: https://github.com/worldbank/\nMember Onboarding Form: http://githubmemberrequest/\nPublic Repository Request Form: http://githubreporequest/\nOpen Source Code Catalog: https://opensource.worldbank.org\nNeed Help: github@worldbank.org\n\n\n\nWebsite:\nContact Person: Ivan Spirev\n\n\n\nWebsite: https://datapartnership.org/\nContact Person: DDP team (datapartnership@worldbank.org)"
   },
   {
     "objectID": "website/courses.html",
@@ -70,17 +91,10 @@
     "text": "Many of the courses will require knowledge of basic data science and World Bank operations. This landing page is meant as a resource for all the courses for those basic steps and processes."
   },
   {
-    "objectID": "website/references.html#data-science-at-the-world-bank",
-    "href": "website/references.html#data-science-at-the-world-bank",
-    "title": "References, Annexes, and Additional Materials",
-    "section": "Data Science at the World Bank",
-    "text": "Data Science at the World Bank\nLorum Ipsum …"
-  },
-  {
     "objectID": "website/references.html#other-training-courses",
     "href": "website/references.html#other-training-courses",
     "title": "References, Annexes, and Additional Materials",
     "section": "Other training courses",
-    "text": "Other training courses\nLorum Ipsum …"
+    "text": "Other training courses\n\nThe Data Academy maintains a catalog of free MOOCs and online courses.\n\nThe World Bank’s Open Learning Campus has a catalog of courses that may be relevant to geospatial data science.\n\nWe have access to huge catalog of training courses from ESRI through our enterprise license. Contact the GeoLab for more information."
   }
 ]

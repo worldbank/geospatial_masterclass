@@ -7,8 +7,8 @@ The foundational courses are exactly that, they are the baseline upon which seve
 | Title | Description | Teachers |
 | --- | --- | --- |
 | [Data Science at the World Bank](courses/data_science.qmd) | Foundations of geospatial data science | TBD |
-| Introduction to desktop GIS | Data types, projections, thematic maps | Katie
-| Intro to satellite imagery | KTF intro, section on WB procurement, ESA/NASA partnerships, data exploration in Python | Katie, Ben, Clara
+| Introduction to desktop GIS | Data types, projections, thematic maps | Katie |
+| Intro to satellite imagery | KTF intro, section on WB procurement, ESA/NASA partnerships, data exploration in Python | Katie, Ben, Clara |
 | Popular open geospatial datasets | WorldPop, ACLED, Fathom, Overture – access, licensing, distribution, etc. | Dunstan Matekenya and Clara Ivanescu |
 | World Bank cartography | Admin boundaries, drawing rules, options for python, R, and flourish | Katie, Bruno, Brian, Ben |
 

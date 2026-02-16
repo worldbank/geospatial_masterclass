@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>data_science – Beyond the Map</title>
+<title>Exploring coordinate systems and projections in Python – Beyond the Map</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -122,144 +157,110 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-science-at-the-world-bank" id="toc-data-science-at-the-world-bank" class="nav-link active" data-scroll-target="#data-science-at-the-world-bank">Data Science at the World Bank</a>
-  <ul class="collapse">
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course outline</a></li>
-  <li><a href="#more-information" id="toc-more-information" class="nav-link" data-scroll-target="#more-information">More Information</a>
-  <ul class="collapse">
-  <li><a href="#development-data-catalog-ddh" id="toc-development-data-catalog-ddh" class="nav-link" data-scroll-target="#development-data-catalog-ddh">Development Data Catalog (DDH)</a></li>
-  <li><a href="#github-at-the-world-bank" id="toc-github-at-the-world-bank" class="nav-link" data-scroll-target="#github-at-the-world-bank">Github at the World Bank</a></li>
-  <li><a href="#databricks-at-the-world-bank" id="toc-databricks-at-the-world-bank" class="nav-link" data-scroll-target="#databricks-at-the-world-bank">Databricks at the World Bank</a></li>
-  <li><a href="#the-development-data-partnership-ddp" id="toc-the-development-data-partnership-ddp" class="nav-link" data-scroll-target="#the-development-data-partnership-ddp">The Development Data Partnership (DDP)</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#how-do-projections-affect-visuals" id="toc-how-do-projections-affect-visuals" class="nav-link active" data-scroll-target="#how-do-projections-affect-visuals">How do projections affect visuals</a></li>
+  <li><a href="#why-is-the-first-projection-so-different" id="toc-why-is-the-first-projection-so-different" class="nav-link" data-scroll-target="#why-is-the-first-projection-so-different">Why is the first projection so different?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Exploring coordinate systems and projections in Python</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="data-science-at-the-world-bank" class="level1">
-<h1>Data Science at the World Bank</h1>
-<p>Data Science is emerging as a critical capability across the World Bank Group, enabling more informed decision-making and impactful development outcomes. This course provides an overview of foundational concepts in geospatial data science, tailored to the needs of World Bank professionals, as well as various tips and tricks for performing geospatial data science within the World Bank environment.</p>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>By the end of this module, you will be able to: - Understand the fundamentals of geospatial data science. - Identify key geospatial data sources and tools relevant to the World Bank. - Perform basic data science tasks using official World Bank platforms and resources.</p>
-</section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<p>Before starting this module, ensure you: - work at the World Bank and have access to its data platforms. - have a basic understanding of Python.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Course</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Instructors</td>
-<td>Geospatial Masterclass Team</td>
-</tr>
-<tr class="even">
-<td>Duration</td>
-<td>2-3 hours</td>
-</tr>
-<tr class="odd">
-<td>Level</td>
-<td>Beginner</td>
-</tr>
-<tr class="even">
-<td>Software</td>
-<td>Python or R</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="course-outline" class="level2">
-<h2 class="anchored" data-anchor-id="course-outline">Course outline</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 43%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Module</th>
-<th>Description</th>
-<th>Trainer</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Data Science at the World Bank</td>
-<td>Overview of data science and its importance in development projects</td>
-<td>Benjamin Stewart</td>
-</tr>
-<tr class="even">
-<td>The World Bank’s Data Catalog</td>
-<td>Navigating and utilizing the World Bank’s Data Catalog for geospatial data</td>
-<td>Gaurav Bhardwaj</td>
-</tr>
-<tr class="odd">
-<td>Github at the World Bank</td>
-<td>Using Github for version control and collaboration on geospatial data science projects</td>
-<td>Bryan Cahill</td>
-</tr>
-<tr class="even">
-<td>Databricks at the World Bank</td>
-<td>Introduction to Databricks for big data processing and analysis</td>
-<td>Ivan Spirev</td>
-</tr>
-<tr class="odd">
-<td>The Development Data Partnership (DDP)</td>
-<td>Introduction to the DDP platform for accessing data</td>
-<td>Sahiti Sarva</td>
-</tr>
-<tr class="even">
-<td>Geospatial Data Science</td>
-<td>Overview of geospatial data science concepts and their relevance to the World Bank</td>
-<td>Benjamin Stewart</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="more-information" class="level2">
-<h2 class="anchored" data-anchor-id="more-information">More Information</h2>
-<p>For more information on the course, please contact Benjamin Stewart at the GOST team (gost@worldbank.org).</p>
-<section id="development-data-catalog-ddh" class="level3">
-<h3 class="anchored" data-anchor-id="development-data-catalog-ddh">Development Data Catalog (DDH)</h3>
-<p>Website: <a href="https://datacatalog.worldbank.org/int/home">https://datacatalog.worldbank.org/int/home</a><br>
-API Link: <a href="https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html">https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html</a><br>
-Contact Person: DDH team (ddh@worldbank.org)</p>
-</section>
-<section id="github-at-the-world-bank" class="level3">
-<h3 class="anchored" data-anchor-id="github-at-the-world-bank">Github at the World Bank</h3>
-<p>WB GitHub Organization: <a href="https://github.com/worldbank/">https://github.com/worldbank/</a><br>
-Member Onboarding Form: <a href="http://githubmemberrequest/">http://githubmemberrequest/</a><br>
-Public Repository Request Form: <a href="http://githubreporequest/">http://githubreporequest/</a><br>
-Open Source Code Catalog: <a href="https://opensource.worldbank.org">https://opensource.worldbank.org</a><br>
-Need Help: <a href="mailto:github@worldbank.org">github@worldbank.org</a></p>
-</section>
-<section id="databricks-at-the-world-bank" class="level3">
-<h3 class="anchored" data-anchor-id="databricks-at-the-world-bank">Databricks at the World Bank</h3>
-<p>Website:<br>
-Contact Person: Ivan Spirev</p>
-</section>
-<section id="the-development-data-partnership-ddp" class="level3">
-<h3 class="anchored" data-anchor-id="the-development-data-partnership-ddp">The Development Data Partnership (DDP)</h3>
-<p>Website: <a href="https://datapartnership.org/">https://datapartnership.org/</a><br>
-Contact Person: DDP team (datapartnership@worldbank.org)</p>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>Understanding coordinate systems and projections when working with geospatial data is important to:</p>
+<ul>
+<li>Ensure your data are properly mapped on the Earth’s surface<br>
+</li>
+<li>Ensure analytical work and results are accurate</li>
+</ul>
+<p>Nowadays, most of the mathematics and conversions are cleanly handled under-the-hood, but the decisions the Data Scientist makes are still important.</p>
+<p>This notebook will explore projections and coordinate systems and investigate how changes in projections can affect results</p>
+<div id="ab3bfbf1" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys, os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.parse</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> rasterio</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> io <span class="im">import</span> BytesIO</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="792a666c" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose and Map your favourite country</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>iso3 <span class="op">=</span> <span class="st">"GHA"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define some input variables for data exploration</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">### Official World Bank Group boundary dataset - https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>world_adm1_boundaries <span class="op">=</span><span class="st">"https://datacatalogfiles.worldbank.org/ddh-published-v2/0038272/5/DR0095369/World%20Bank%20Official%20Boundaries%20(GeoJSON)/World%20Bank%20Official%20Boundaries%20-%20Admin%201.geojson"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>adm1_bounds <span class="op">=</span> gpd.read_file(world_adm1_boundaries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="f21db441" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We can also read these from the ESRI rest endpoint through the World Bank's GeoWB</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>queryable_geowb_url <span class="op">=</span> urllib.parse.quote(<span class="ss">f'https://services.arcgis.com/iQ1dY19aHwbSDYIF/arcgis/rest/services/World_Bank_Global_Administrative_Divisions/FeatureServer/2/query?where="ISO_A3"=</span><span class="ch">\'</span><span class="sc">{</span>iso3<span class="sc">}</span><span class="ch">\'</span><span class="ss">&amp;f=pgeojson'</span>, safe<span class="op">=</span><span class="st">':/?=&amp;'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>country_bound <span class="op">=</span> gpd.read_file(queryable_geowb_url)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="35f65e8c" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># SSL errors are common when working inside the World Bank firewall. If you encounter these, you can bypass them with the code below</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(queryable_geowb_url, verify<span class="op">=</span><span class="va">False</span>) <span class="co"># &lt;--- Ignore SSL</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>country_bound <span class="op">=</span> gpd.read_file(BytesIO(response.content))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="90e811ad" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the country data 3 ways</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>country_bound.union_all()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="40713b6d" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>country_bound.plot()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="5423c618" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>country_bound.explore().save(<span class="st">"country_bound.html"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="how-do-projections-affect-visuals" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-projections-affect-visuals">How do projections affect visuals</h2>
+<p>Search for different projections for your country at epsg.io</p>
+<div id="4f8b1a55" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>projection_1 <span class="op">=</span> <span class="dv">2136</span>  <span class="co"># https://epsg.io/2136</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>projection_2 <span class="op">=</span> <span class="dv">32630</span> <span class="co"># https://epsg.io/32630</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>projection_3 <span class="op">=</span> <span class="st">"ESRI:54009"</span> <span class="co"># https://spatialreference.org/ref/esri/54009/ - this is a world projection that preserves area, but distorts shape and distance. It is often used for global scale mapping.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="2c5db8e3" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>country_bound.to_crs(projection_1).plot(ax<span class="op">=</span>axes[<span class="dv">0</span>])</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>country_bound.to_crs(projection_2).plot(ax<span class="op">=</span>axes[<span class="dv">1</span>])</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>country_bound.to_crs(projection_3).plot(ax<span class="op">=</span>axes[<span class="dv">2</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="92959bb2" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare area calculations across projections</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>country_bound[<span class="st">"area_projection_1"</span>] <span class="op">=</span> country_bound.to_crs(projection_1).area<span class="op">/</span><span class="dv">1000000</span> <span class="co"># Convert from m^2 to km^2</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>country_bound[<span class="st">"area_projection_2"</span>] <span class="op">=</span> country_bound.to_crs(projection_2).area<span class="op">/</span><span class="dv">1000000</span> <span class="co"># Convert from m^2 to km^2</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>country_bound[<span class="st">"area_projection_3"</span>] <span class="op">=</span> country_bound.to_crs(projection_3).area<span class="op">/</span><span class="dv">1000000</span> <span class="co"># Convert from m^2 to km^2</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>country_bound.sort_values(<span class="st">"area_projection_1"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
-</section>
+<section id="why-is-the-first-projection-so-different" class="level1">
+<h1>Why is the first projection so different?</h1>
+
+
 </section>
 
 </main> <!-- /main -->

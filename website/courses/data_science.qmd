@@ -10,20 +10,46 @@ By the end of this module, you will be able to:
 ## Prerequisites
 Before starting this module, ensure you:
 - work at the World Bank and have access to its data platforms.
-- have a basic understanding of data analysis concepts.
+- have a basic understanding of Python.
 
 | Course | Details |
 |-----|-----|
 | Instructors | Geospatial Masterclass Team |
-| Duration | 2 hours |
+| Duration | 2-3 hours |
 | Level | Beginner |
 | Software | Python or R |
 
 ## Course outline
 | Module | Description | Trainer |
 |--------|-------------|---------|
-| Data Science at the World Bank  | Overview of data science and its importance in development projects | TBD |
+| Data Science at the World Bank  | Overview of data science and its importance in development projects | Benjamin Stewart |
 | The World Bank's Data Catalog | Navigating and utilizing the World Bank's Data Catalog for geospatial data | Gaurav Bhardwaj |
 | Github at the World Bank | Using Github for version control and collaboration on geospatial data science projects | Bryan Cahill |
+| Databricks at the World Bank | Introduction to Databricks for big data processing and analysis | Ivan Spirev |
 | The Development Data Partnership (DDP) | Introduction to the DDP platform for accessing data | Sahiti Sarva |
 | Geospatial Data Science | Overview of geospatial data science concepts and their relevance to the World Bank | Benjamin Stewart |
+
+## More Information
+For more information on the course, please contact Benjamin Stewart at the GOST team (gost@worldbank.org).
+
+### Development Data Catalog (DDH)
+Website: [https://datacatalog.worldbank.org/int/home](https://datacatalog.worldbank.org/int/home)  
+API Link: [https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html](https://ddhinboundopenapiprd.ase.worldbank.org/docs/index.html)  
+Contact Person: DDH team (ddh@worldbank.org)  
+
+### Github at the World Bank
+WB GitHub Organization: [https://github.com/worldbank/](https://github.com/worldbank/)  
+Member Onboarding Form: [http://githubmemberrequest/](http://githubmemberrequest/)  
+Public Repository Request Form: [http://githubreporequest/](http://githubreporequest/)  
+Open Source Code Catalog: [https://opensource.worldbank.org](https://opensource.worldbank.org)  
+Need Help: [github@worldbank.org](mailto:github@worldbank.org)  
+
+### Databricks at the World Bank
+Website:   
+Contact Person: Ivan Spirev  
+
+### The Development Data Partnership (DDP)
+Website: [https://datapartnership.org/](https://datapartnership.org/)  
+Contact Person: DDP team (datapartnership@worldbank.org)  
+
+
