@@ -1,5 +1,5 @@
 # Beyond the Map: Geospatial Data Science at the World Bank
-[Geospatial data science training documentation and plan](https://worldbank.github.io/geospatial_masterclass/docs/website/index.html)
+[Geospatial data science training documentation and plan](https://worldbank.github.io/geospatial_masterclass/website/)
 
 Geospatial data are increasingly common in World Bank analytics and operations, and with the professionalization of data science at the World Bank, we need to take geospatial data science more seriously. These courses are designed as an introduction to geospatial data, specific aspects of geospatial at the World Bank, and a portfolio of geospatial data science across the institution.
 
