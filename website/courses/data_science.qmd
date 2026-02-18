@@ -45,11 +45,13 @@ Open Source Code Catalog: [https://opensource.worldbank.org](https://opensource.
 Need Help: [github@worldbank.org](mailto:github@worldbank.org)  
 
 ### Databricks at the World Bank
-Website:   
-Contact Person: Ivan Spirev  
+ Yammer Databricks Community Viva Engage Group - [Link](https://engage.cloud.microsoft/main/org/worldbank.org/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMTU5MjkwMzY4MDAifQ)
+ Data Lab Services Request – [Link](https://worldbankgroup.service-now.com/wbg?id=wbg_sc_catalog&sys_id=dadffc7987772d10205c42e9cebb3564)
+ Databricks Academy - [Link](https://customer-academy.databricks.com/)
+ Databricks Lakehouse Support Help Page – [Link](https://worldbankgroup.sharepoint.com/sites/wblakehouse)
 
 ### The Development Data Partnership (DDP)
 Website: [https://datapartnership.org/](https://datapartnership.org/)  
-Contact Person: DDP team (datapartnership@worldbank.org)  
+Contact Person: DDP team (datapartnership@worldbank.org)
 
 

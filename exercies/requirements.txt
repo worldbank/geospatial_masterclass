@@ -9,3 +9,5 @@ matplotlib
 folium
 mapclassify
 wbddh
+rasterstats
+ipykernel
