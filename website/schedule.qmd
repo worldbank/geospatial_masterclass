@@ -10,9 +10,8 @@ Schedule is tentative and subject to change
 | 2026-03-04 | [Connectivity analytics with GOSTnets: building and using transport networks to assess access and travel time](courses/health_access.qmd) | 
 | 2026-03-18 | From pixels to products: Introduction to remote sensing and earth observation from a development perspective | 
 | 2026-04-01 | Space2Stats: exploring the World Bank’s subnational geospatial aggregates using Python, DDH, and Hex API | 
-| 2026-04-15 | Blackmarpley: How to leverage NASA’s Black Marble nightlights products to inform development decisions | 
-| 2026-04-29 | Principles of World Bank cartography: from data to decision-ready maps | 
-| 2026-05-13 | Popular geospatial public goods |  
-| 2026-05-27 | Space2Stats: People and Planet | 
-| 2026-06-10 | Radar damage assessments | 
-| 2026-06-24 | Data collection with GEMS | 
+| 2026-04-22 | Beyond the clouds: how to leverage all-weather, day-and-night Synthetic Aperture Radar data for WBG operations |  
+| 2026-05-06 | Principles of World Bank cartography: from data to decision-ready maps | 
+| 2026-05-20 | Space2Stats: People and Planet | 
+| 2026-06-03 | Data collection with GEMS | 
+| 2026-06-17 | Blackmarblepy: How to leverage NASA’s Black Marble nightlights products to inform development decisions | 

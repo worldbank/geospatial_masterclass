@@ -12,11 +12,14 @@ Before starting this module, ensure you have:
 
 | Course | Details |
 |-----|-----|
-| Instructors | Benjamin Stewart, Dunstan Matekenya, and Katie McWilliams |
+| Instructors | Benjamin Stewart, Katie McWilliams, and Walker Kosmidou-Bradley |
 | Duration | 3 hours |
 | Level | Intermediate |
 | Software | Python, Jupyter Notebooks |
 | Course Materials | [Health Access](https://github.com/worldbank/Health-Access-Metrics/tree/main/notebooks/Tutorials) |
 
 ## Additional Materials
-Lorem Ipsum
+[GOSTnets (vector analysis)](https://github.com/worldbank/GOSTnets) - A Python package for geospatial network analysis as graph, including tools for calculating travel time and market access.  
+[GOSTnets (raster analysis)](https:/./github.com/worldbank/GOSTnetsraster) - A Python package for geospatial raster analysis, including tools for calculating travel time and market access.  
+[Introduction to Market Access](https://wbg.edcast.com/insights/ECL-452547cc-7c5e-48f1-bec4-d633a8497e9c) - A video introduction to the concept of market access and its importance in development.  
+[Health Access in Health Projects](https://worldbank.github.io/Health-Access-Metrics/docs/User%20Guide/3_raster_vector_analysis.html) - A user guide on how to use the Health Access Metrics package for raster and vector analysis, including calculating travel time and market access.  
