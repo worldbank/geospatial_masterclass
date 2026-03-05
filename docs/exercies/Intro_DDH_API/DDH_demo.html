@@ -186,7 +186,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="73941507" class="cell">
+<div id="73941507" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> wbddh</span>
@@ -215,9 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="634ce6e9" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## https://ddh-openapi.worldbank.org -- host for external use</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">## Setting the API host to the internal one. If you are an external user, please set it to the external one.</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>wbddh.set_api_host(<span class="st">"https://ddh-openapi.worldbank.org"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>wbddh.set_api_host(<span class="st">"https://ddh-openapi.worldbank.org"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="search" class="level3">
@@ -388,9 +386,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="exercise" class="level2">
 <h2 class="anchored" data-anchor-id="exercise">Exercise</h2>
 <ul>
-<li>Search for “Burkina Faso Administrative Boundaries” dataset on DDH and retrieve metadata for all its resources.</li>
-<li>Use the resource IDs to get the file URL for “District boundary” geojson file.</li>
+<li>Search for “World Bank Official Boundaries” dataset on DDH and retrieve metadata for all its resources.</li>
+<li>You can use <a href="https://datacatalogfiles.worldbank.org/ddh-published-v2/0038272/5/DR0095369/DR0095369.csv">this link</a> to see the links to individual items in the resource.</li>
+<li>Read the above link with pandas (read_csv) and get the link to Admin 0 geojson file.</li>
+<li>Read this link with geopandas to load the data in a grodataframe. Filter out the data to Burkina Faso (ISO_A3 = ‘BFA’)</li>
 <li>Now search for “Burkina Faso - Electricity Transmission Network” dataset and get the fle link for Geojson file.</li>
+<li>Read in this geojson file into a geodataframe.</li>
 <li>Use these two layers to visually overlay on top of each other</li>
 </ul>
 <p>Hint: - While plotting first geodataframe, assign it to a variable <code>ax</code> - For second dataframe’s plot, assign the parameter <code>ax=ax</code>. For instance, plot for gdf2 will look like <code>gdf2.plot(ax=ax)</code> - Double check if the two geodataframes have the same CRS. - check if <code>print(gdf1.crs == gdf2.crs)</code> - If not, you can set gdf2 crs as <code>gdf2 = gdf2.set_crs(gdf1.crs, allow_override=True)</code></p>
