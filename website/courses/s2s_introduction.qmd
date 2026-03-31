@@ -1,0 +1,41 @@
+# Space2Stats - geospatial aggregates 
+Space2Stats (S2S) is a World Bank initiative that provides geospatial aggregates for development indicators. This course offers an introduction to the S2S initiative, its objectives, and how it can be utilized to enhance development projects through geospatial data.
+
+## Objectives
+By the end of this module, you will be able to:  
+- Understand the purpose and scope of the Space2Stats initiative.  
+- Learn how to access administrative level 2 geospatial aggregates  
+- Learn how to access the consistent hexagonal grid geospatial aggregates.  
+- Identify potential applications of S2S data in development projects.  
+
+## Prerequisites
+Before starting this module, ensure you:  
+- Have basic understanding of geospatial data and its applications in development.  
+- Have basic familiarity with Python  
+
+## Important links
+Website: [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html)  
+Tutorial #1: [Fetching, exploring, and mapping S2S administrative aggregates](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/01_accessing_subnational_data.ipynb)  
+Tutorial #2: [Fetching, exploring, and mapping S2S hexagons](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/03_accessing_hexagons.ipynb)  
+
+| Course | Details |
+|-----|-----|
+| Instructors | Benjamin P. Stewart and Gabe Levin |
+| Duration | 2-3 hours |
+| Level | Beginner |
+| Software | Python |
+
+## Course outline
+| Module | Trainer |
+|-------|----|
+| Why are sub-national data so important? | Benjamin P. Stewart |
+| What is S2S? | Benjamin P. Stewart |
+| __Exercise__ – Fetching, exploring, and mapping S2S administrative aggregates. | Gabe Levin |
+| The S2S database – what do we have, what are we missing? | Gabe Levin |
+| Why hexagons? | Benjamin P. Stewart |
+| __Exercise__ – Fetching, exploring, and mapping S2S hexagons | Gabe Levin |
+| What’s next and Conclusion | Benjamin P. Stewart |
+
+## More Information
+For more information on the course, please contact Benjamin Stewart at the GOST team (gost@worldbank.org).
+
