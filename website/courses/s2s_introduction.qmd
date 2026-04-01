@@ -15,8 +15,8 @@ Before starting this module, ensure you:
 
 ## Important links
 Website: [Space2Stats](https://worldbank.github.io/DECAT_Space2Stats/readme.html)  
-Tutorial #1: [Fetching, exploring, and mapping S2S administrative aggregates](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/01_accessing_subnational_data.ipynb)  
-Tutorial #2: [Fetching, exploring, and mapping S2S hexagons](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/03_accessing_hexagons.ipynb)  
+Tutorial #1: [Fetching, exploring, and mapping S2S administrative aggregates](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/accessing_subnational_data.ipynb)  
+Tutorial #2: [Fetching, exploring, and mapping S2S hexagons](https://colab.research.google.com/github/worldbank/DECAT_Space2Stats/blob/glevin_workshop_prep/workshops/accessing_hexagons.ipynb)  
 
 | Course | Details |
 |-----|-----|
