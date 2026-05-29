@@ -1,0 +1,26 @@
+# Introduction to Earth Observation 
+(EO) and its applications in development projects
+
+## Objectives
+By the end of this module, you will be able to:
+- Understand the basics of Earth Observation (EO) and its applications in development projects.
+- Learn about different EO data sources and how to access them.
+- Identify tools and techniques for analyzing EO data.
+
+## Prerequisites
+None
+
+## Important Links
+[Satellite State of Play](https://landscape.satsummit.io/)  
+[Online course: Enhancing FCV Operations with Geospatial ICT tools](https://wbg.edcast.com/insights/enhancing-fcv-operations-with-geospatial-ict-tools)  
+[Course blog](https://blogs.worldbank.org/opendata/enhancing-fcv-operations-geospatial-ict-tools-new-world-bank-online-course-explores-use)  
+[Google earth engine tutorials](https://developers.google.com/earth-engine/tutorials/community/satellite-embedding-03-supervised-classification)  
+[Info on band combinations](https://eos.com/make-an-analysis/)  
+[Sentinel-2 band combinations](https://gisgeography.com/sentinel-2-bands-combinations/)  
+
+| Course | Details |
+| ----- | ----- |
+| Instructors | Katie L. McWilliams and Clara Ivanescu |
+| Duration | 2-3 hours |
+| Level | Beginner |
+| Software | Python |

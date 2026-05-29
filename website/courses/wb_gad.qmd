@@ -1,0 +1,30 @@
+# World Bank Boundaries (WB-GAD) and Cartography
+The World Bank Geospatial Administrative Database (WB-GAD) is a comprehensive repository of geospatial data on administrative boundaries for countries around the world. This course provides an introduction to WB-GAD, its legal requirements, and how to access and use the data for generating official World Bank maps.
+
+## Objectives
+By the end of this module, you will be able to:  
+- Understand the legal requirements of making official World Bank maps  
+- Learn how to access and use the World Bank Geospatial Administrative Database (WB-GAD)  
+- Identify tools for generating official World Bank maps using WB-GAD data  
+
+
+## Prerequisites
+None
+
+## Important Links
+[WB Official Boundaries (this is the external link- make sure it works for you)](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)  
+[Github Tracker (for reporting issues with WB-GAD)](https://github.com/worldbank/WB_GAD/issues)  
+[Mapshaper for file simplification](https://mapshaper.org/)  
+[Map Guidelines](https://designstudiodevint.worldbank.org/mapsguidelines/index.html#home)  
+[Data Visualization Style Guide](https://worldbank.github.io/data-visualization-style-guide/)  
+[Color blender](https://www.colorhexa.com/color-blend)  
+[Flourish](https://flourish.studio/)  
+[Map Clearance contact](mailto:mapclearance@worldbank.org)  
+
+
+| Course | Details |
+|-----|-----|
+| Instructors | Katie McWilliams, Bruno Bonansea, Divyanshi Wadhwa, Maarten Lambrechts |
+| Duration | 2-3 hours |
+| Level | Beginner |
+| Software | Flourish and Python |

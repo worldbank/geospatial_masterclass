@@ -1,0 +1,25 @@
+# Beyond the Clouds: Leveraging Synthetic Aperture Radar (SAR) for World Bank Operations
+Synthetic Aperture Radar (SAR) is a powerful remote sensing technology that can capture high-resolution images of the Earth's surface regardless of weather conditions or time of day. This course will explore how to leverage SAR data for World Bank operations, including its applications in monitoring and assessing development projects.
+
+## Objectives
+By the end of this module, you will be able to:
+- Understand the basics of Synthetic Aperture Radar (SAR) technology and its advantages for remote sensing.
+- Learn how to access and use SAR data for development projects.
+- Identify tools and techniques for analyzing SAR data in the context of World Bank operations.
+
+## Prerequisites
+Python will be useful for running exercises
+
+## Important Links
+[Introduction to SAR](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/  )
+[GOST SAR GitHub](https://github.com/worldbank/GOST_SAR)  
+[Step by step tutorials S1 data analytics UNSPIDER](https://www.un-spider.org/advisory-support/recommended-practices)  
+[GEE tutorials](https://developers.google.com/earth-engine/tutorials/community/sar-basics)   
+[Sentinel 1 Toolbox](https://step.esa.int/docs/tutorials/S1TBX%20SAR%20Basics%20Tutorial.pdf)
+
+| Course | Details |
+| ----- | ----- |
+| Instructor | Clara Ivanescu |
+| Duration | 2-3 hours |
+| Level | Beginner |
+| Software | Python and Google Earth Engine |
